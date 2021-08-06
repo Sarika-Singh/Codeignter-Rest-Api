@@ -22,15 +22,14 @@ class Staffdetailapi extends REST_Controller{
         if($result){
             foreach($result as $row)
             {
-                $output['first_name'] = $row['first_name'];
-                $output['last_name'] = $row['last_name'];
-                $output['phone'] = $row['phone'];
+                $output['first_name'] = $row['first_name'];     
+                $output['last_name'] = $row['last_name']; 
+                $output['phone'] = $row['phone']; 
                 $output['email'] = $row['email'];
                 $output['role_type'] = $row['role_type'];     
             }
             echo json_encode($output);
-            // $this->response($result, 200); 
-            // exit;
+            
         } 
         else{
              $this->response("Invalid ID", 404);
