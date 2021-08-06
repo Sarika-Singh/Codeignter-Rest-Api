@@ -8,7 +8,7 @@ class Staffdetailapi extends REST_Controller{
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('StaffModel');
+        $this->load->model('StaffModel');      
     }
     //API - client sends id and on valid id  information is sent back
     function getstaffbyid_get($id){
