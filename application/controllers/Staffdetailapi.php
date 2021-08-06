@@ -26,7 +26,7 @@ class Staffdetailapi extends REST_Controller{
                 $output['last_name'] = $row['last_name'];
                 $output['phone'] = $row['phone'];
                 $output['email'] = $row['email'];
-                $output['role_type'] = $row['role_type'];
+                $output['role_type'] = $row['role_type'];     
             }
             echo json_encode($output);
             // $this->response($result, 200); 
