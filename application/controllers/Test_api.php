@@ -25,7 +25,7 @@ class Test_api extends CI_Controller {
 				// curl_setopt($client, CURLOPT_POSTFIELDS, $form_data);
 				curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 				$response = curl_exec($client);
-				curl_close($client);
+				curl_close($client); 
 				echo $response; 
 
 
