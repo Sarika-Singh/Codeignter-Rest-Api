@@ -29,8 +29,7 @@ class Staffdetailapi extends REST_Controller{
                 $output['role_type'] = $row['role_type'];     
             }
             echo json_encode($output);
-            // $this->response($result, 200); 
-            // exit;
+            
         } 
         else{
              $this->response("Invalid ID", 404);
